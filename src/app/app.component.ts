@@ -9,8 +9,11 @@ function log (target, name, descriptor){
   const original = descriptor.value
   // manipulate the descriptor.value completed
 
-  original()
-  
+  descriptor.value = function (...args){
+    console.log("Arguments", args, "were passed in this function!");
+    const result = original(args)
+  };
+
   descriptor.value = function () {
     console.log("This function was hacked!");
   }
