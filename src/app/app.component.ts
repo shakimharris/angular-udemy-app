@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 
 function log (target, name, descriptor){
   console.log(target, name, descriptor);
+  // store the original function in a variable
+  // manipulate the descriptor.value
+  // return the descriptor
 }
 
 @Component({
