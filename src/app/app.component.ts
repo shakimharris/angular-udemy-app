@@ -9,6 +9,8 @@ function log (target, name, descriptor){
   const original = descriptor.value
   // manipulate the descriptor.value completed
 
+  original()
+  
   descriptor.value = function () {
     console.log("This function was hacked!");
   }
@@ -23,6 +25,11 @@ function log (target, name, descriptor){
 })
 export class AppComponent {
   title = 'Udemy App';
+
+  constructor(){
+    this.aSimpleMethod
+  }
+
   @log
   aSimpleMethod () {
   console.log("Hello!");
