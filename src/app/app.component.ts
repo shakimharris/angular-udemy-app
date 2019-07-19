@@ -12,7 +12,8 @@ function log (target, name, descriptor){
   descriptor.value = function () {
     console.log("This function was hacked!");
   }
-
+  return descriptor;
+  // descriptor returned here
 }
 
 @Component({
