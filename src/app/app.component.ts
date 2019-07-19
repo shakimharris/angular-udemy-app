@@ -5,6 +5,14 @@ function log (target, name, descriptor){
   // store the original function in a variable
   // manipulate the descriptor.value
   // return the descriptor
+
+  const original = descriptor.value
+  // manipulate the descriptor.value completed
+
+  descriptor.value = function () {
+    console.log("This function was hacked!");
+  }
+
 }
 
 @Component({
@@ -14,7 +22,7 @@ function log (target, name, descriptor){
 })
 export class AppComponent {
   title = 'Udemy App';
-  @log 
+  @log
   aSimpleMethod () {
   console.log("Hello!");
   }
