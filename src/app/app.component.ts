@@ -11,4 +11,8 @@ function log (target, name, descriptor){
 })
 export class AppComponent {
   title = 'Udemy App';
+  @log 
+  aSimpleMethod () {
+  console.log("Hello!");
+  }
 }
