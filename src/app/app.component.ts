@@ -31,11 +31,11 @@ export class AppComponent {
   title = 'Udemy App';
 
   constructor(){
-    this.aSimpleMethod
+    console.log("This statement was created by the constructor method", this.aSimpleMethod);
   }
 
   @log
-  aSimpleMethod () {
-  console.log("Hello!");
+  aSimpleMethod (a) {
+  return a*a;
   }
 }
