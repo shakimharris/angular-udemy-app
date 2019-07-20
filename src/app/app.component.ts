@@ -11,7 +11,8 @@ function log (target, name, descriptor){
 
   descriptor.value = function (...args){
     console.log("Arguments", args, "were passed in this function!");
-    const result = original(args)
+    const result = original(this, args)
+    console.log("The results of the function are", result);
   };
 
   descriptor.value = function () {
