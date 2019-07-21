@@ -28,7 +28,7 @@ function log (target, name, descriptor){
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  myVariable = 'Udemy App';
+  myVariable= 'Udemy App';
 
   constructor(){
     console.log("This statement was created by the constructor method", this.aSimpleMethod(5));
