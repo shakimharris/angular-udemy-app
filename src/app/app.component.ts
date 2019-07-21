@@ -7,9 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  test = 'Udemy App';
+  text = 'Udemy App';
 
-  updateValue(e){
-  console.log(e);
-  }
 }
