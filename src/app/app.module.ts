@@ -30,7 +30,7 @@ import { DataComponent } from './data/data.component';
 
       },
       {
-      path: 'home',
+      path: '',
       component: HomeComponent
       }
     ])
