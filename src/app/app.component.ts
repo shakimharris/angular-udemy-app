@@ -8,12 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   myVariable= 'Udemy App';
+  mydisabledValue= false;
 
 
   constructor() {
     this.myVariable=""
+    this.mydisabledValue = false;
     setInterval(() => {
     this.myVariable = Math.random().toString()
     }, 500)
+    this.mydisabledValue = Math.random() > 0.5 ;
   }
 }
