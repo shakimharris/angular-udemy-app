@@ -8,12 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   myVariable= 'Udemy App';
-this.myVariable = ""
+
 
   constructor() {
+    this.myVariable=""
     setInterval(() => {
-    this.myVariable = Math.random.toString();
-    
+    this.myVariable = Math.random().toString()
     }, 500)
   }
 }
