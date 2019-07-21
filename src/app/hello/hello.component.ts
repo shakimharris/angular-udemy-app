@@ -15,8 +15,8 @@ export class HelloComponent implements OnInit {
   constructor() {
   }
 
-  dosomeHeavyTask(){
-    console.log("Called ${this.i++} + times")
+  dosomeHeavyTask() {
+    console.log("Called + times");
   }
   
   ngOnInit() {
