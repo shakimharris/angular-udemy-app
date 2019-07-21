@@ -9,6 +9,9 @@ export class RecordsService {
   constructor(private http: HttpClient]) { }
 
   getData() {
-    return this.http.get('http://localhost:3400/file.json');
+    return this.http.get('http://localhost:3400/file.json')
+    .subscribe(data => {
+      console.log('We got', data);
+    });
   }
 }
