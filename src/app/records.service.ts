@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class RecordsService {
 
-  constructor(private http: HttpClient]) { }
+  constructor(private http: HttpClient) { }
 
   getData() {
     return this.http.get('http://localhost:3400/file.json')
