@@ -18,7 +18,7 @@ export class AppComponent {
     },
       {
       name: 'Rihanna',
-      address: false;
+      address: false
     }
   ]
 }
