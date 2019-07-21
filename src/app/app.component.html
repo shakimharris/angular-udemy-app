@@ -4,7 +4,7 @@
         <td>Your Name </td>
         <td>Address</td>
     </tr>
-    <tr *ngFor="let record of records; let myIndex = index; let evenRecords = even; let oddRecords = odd">
+    <tr *ngFor="let record of records; let myIndex = index; let evenRecord = even; let oddRecord = odd;" [ngClass]="{odd: oddRecord , even: evenRecord}">
         <td>{{myIndex}}</td>
         <td>{{record.name}}</td>
         <td>{{record.address}}</td>
