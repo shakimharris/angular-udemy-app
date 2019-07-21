@@ -1,5 +1,7 @@
 <?php 
-header('Access-Control-Allow-Origin *')
+header('Access-Control-Allow-Origin *');
+// Add Application Type to Send A JSON response
+header('Content-Type: application/json');
 ?>
 {
 obj : [
