@@ -1,2 +1,9 @@
-<input type="text" [(ngModel="text")] />
-{{ test }}
+<table>
+    <tr>
+        <td>Your Name </td>
+    </tr>
+    <tr *ngFor="let record of record">
+        {{ record.name }}
+        {{ record.address }}
+    </tr>
+</table>
