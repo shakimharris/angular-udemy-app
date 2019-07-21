@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RecordsService } from './records.service';
 
 
 @Component({
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+  records = {}
+  constructor (private myFirstService: RecordsService){
+
+  }
+  ngOnInit (){
+    this.records = this.myFirstService.getData();
+  }
 }
