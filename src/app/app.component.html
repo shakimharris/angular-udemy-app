@@ -1,9 +1,11 @@
 <table>
     <tr>
+        <td>Serial No. </td>
         <td>Your Name </td>
         <td>Address</td>
     </tr>
-    <tr *ngFor="let record of records">
+    <tr *ngFor="let record of records; let myIndex = index; let evenRecords = even; let oddRecords = odd">
+        <td>{{myIndex}}</td>
         <td>{{record.name}}</td>
         <td>{{record.address}}</td>
     </tr>
