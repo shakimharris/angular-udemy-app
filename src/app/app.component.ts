@@ -7,14 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  myVariable= 'Udemy App';
-  mydisabledValue= false;
+  test = 'Udemy App';
 
 
   constructor() {
 
   }
-
-  myFunction(){
-    console.log("You called me again!");
 }
