@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   test = 'Udemy App';
 
-  updateEvent(e){
+  updateValue(e){
   console.log(e);
   }
 }
