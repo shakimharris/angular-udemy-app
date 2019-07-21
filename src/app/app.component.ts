@@ -9,8 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   test = 'Udemy App';
 
-
-  constructor() {
-
+  updateEvent(e){
+  console.log(e);
   }
 }
