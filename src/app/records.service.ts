@@ -9,6 +9,6 @@ export class RecordsService {
   constructor(private http: HttpClient]) { }
 
   getData() {
-    return 
+    return this.http.get('http://localhost:3400/file.json');
   }
 }
