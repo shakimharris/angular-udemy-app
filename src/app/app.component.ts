@@ -7,6 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  text = 'Udemy App';
-
+  records = [
+    {
+      name: 'Shakim',
+      address: '176 John Daly'
+    },
+      {
+      name: 'Kristina', 
+      address: '165 Vincent'
+    },
+      {
+      name: 'Rihanna',
+      address: false;
+    }
+  ]
 }
