@@ -9,7 +9,7 @@ function log (target, name, descriptor){
   const original = descriptor.value
   // manipulate the descriptor.value completed
 
-  descriptor.value = function (...args){
+  descriptor.value = function (args: any){
     console.log("Arguments", args, "were passed in this function!");
     const result = original.apply(this, args);
     console.log("The results of the function are" , result);
